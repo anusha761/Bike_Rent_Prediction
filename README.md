@@ -1,4 +1,4 @@
-# Project Name
+# Bike Rent Prediction
 > This project aims to develop a predictive model to forecast the demand for shared bikes in the American market, focusing on key factors that influence bike usage. BoomBikes, a leading bike-sharing provider, has faced challenges due to the ongoing pandemic and seeks to leverage data to understand shifting customer needs. By analyzing historical usage data, this project will identify important variables such as weather, temperature, day of the week, and season that impact bike demand.
 
 Using different approaches of regression, the project will explore how these factors affect demand fluctuations and help predict future trends. The insights gained will enable BoomBikes to optimize operations, adjust fleet distribution, refine pricing strategies, and tailor marketing efforts to align with expected demand.
