@@ -1,7 +1,7 @@
 # Project Name
 > This project aims to develop a predictive model to forecast the demand for shared bikes in the American market, focusing on key factors that influence bike usage. BoomBikes, a leading bike-sharing provider, has faced challenges due to the ongoing pandemic and seeks to leverage data to understand shifting customer needs. By analyzing historical usage data, this project will identify important variables such as weather, temperature, day of the week, and season that impact bike demand.
 
-Using linear regression, the project will explore how these factors affect demand fluctuations and help predict future trends. The insights gained will enable BoomBikes to optimize operations, adjust fleet distribution, refine pricing strategies, and tailor marketing efforts to align with expected demand.
+Using different approaches of regression, the project will explore how these factors affect demand fluctuations and help predict future trends. The insights gained will enable BoomBikes to optimize operations, adjust fleet distribution, refine pricing strategies, and tailor marketing efforts to align with expected demand.
 
 Ultimately, the goal is to provide BoomBikes with a data-driven approach to better anticipate demand, enhance customer satisfaction, and improve operational efficiency. By understanding these demand dynamics, BoomBikes can strengthen its position in the competitive bike-sharing market as the economy recovers.
 
@@ -44,15 +44,15 @@ The overall inference from all the models is as follows:
 
 2. For ridge regression, R2 score is 0.83 but all the features are kept with very small coefficients for the less important ones as is the nature of the ridge regression model.
 
-3. For lasso regression, with alpha as 0.005, R2 score was 0.77 with just 7 features. We are reducing complexity of model by 75% by compromising just 7% complexity. Features used:
+3. For lasso regression, with alpha as 0.005, R2 score was 0.77 with just 7 features. We are reducing complexity of model by 75% by compromising just 7% performance. Features used:
 'yr','atemp','Sun','misty/cloudy','snow/rain/thunderstorm','spring','winter'
 
-4. For lasso regression, with alpha as 0.01, R2 score was 0.71 with just 5 features. We are reducing complexity of model by 83% by compromising just 10% complexity. Features used:
+4. For lasso regression, with alpha as 0.01, R2 score was 0.71 with just 5 features. We are reducing complexity of model by 83% by compromising just 10% performance. Features used:
 'yr','atemp','misty/cloudy','spring','winter'
 
-For many cases in the industry where a simpler model is prefered to a complex model, the third or fourth regression model can be used as the models are maintaining simplicity as well as having acceptable r2 score.
+5. In the final model, both lasso and ridge regression were combined. From 29 features, 7 features were shortlisted from lasso regression at alpha=0.005. These features were applied on ridge regression to get a decent R2 of 0.80. We reduced 76% of complexity, with only slight compromise in performance by 3.6% as compared to original ridge regression model where all features were used and R2 score was 0.83. 
 
-
+For many cases in the industry where a simpler model is prefered to a complex model while still maintaining an acceptable performance, the fifth regression model can be used as the model is maintaining simplicity as well as having acceptable r2 score.
 
 
 ## Technologies Used
